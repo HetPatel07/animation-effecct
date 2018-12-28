@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> Title </title>
+    <style>
+        .button {
+            width: 95%;
+            margin: auto;
+        }
+
+        .inner::before {
+            position: absolute;
+            top: 0;
+            left: 0;
+            content: "";
+            width: 0%;
+            height: 100%;
+            background-color: pink;
+            transition: 1s all;
+            z-index: -1;
+        }
+
+        .inner:hover:before {
+            width: 100%;
+            
+        }
+
+        .inner {
+            z-index: 1;
+            position: relative;
+            width: 150px;
+            height: 50px;
+            text-align: center;
+            line-height: 50px;
+            background-color: purple;
+        }
+
+        a {
+            color: white;
+            z-index: 11;
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="button">
+        <div class="inner">
+            <a href="" class="btn">OUR VISION</a>
+        </div>
+    </div>
+</body>
+</html>
